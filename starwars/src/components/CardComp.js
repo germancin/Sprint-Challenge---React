@@ -90,18 +90,17 @@ class Card extends Component {
 
     render() {
         return (
-            <CardWrapper key={this.props.card.name} >
+            <CardWrapper key={this.props.card.Name} >
                 <div className="flip-container" onTouchStart={this.handleTouchStart}>
                     <div className="flipper">
                         <div className="front">
-                            <span className="name">{this.props.card.name}</span>
+                            <span className="name">{this.props.card.Name}</span>
                         </div>
                         <div className="back">
                             <span className="nameD">{this.props.card.name}</span> <br/>
                             <span className="info">
-                                <strong>Eye Color:</strong> {this.props.card.eye_color} <br/>
-                                <strong>SkinColor:</strong> {this.props.card.skin_color} <br/>
-                                <strong>Gender:</strong> {this.props.card.gender} <br/>
+                                <strong>Name:</strong> {this.props.card.Name} <br/>
+                                <strong>Email:</strong> {this.props.card.Email} <br/>
                             </span>
                         </div>
                     </div>
